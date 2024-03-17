@@ -1,0 +1,82 @@
+@import url("common.css");
+
+/* header style */
+header {
+  /* 투명도 0.2 */
+  background: rgba(0, 0, 0, 0.2);
+  /* 이미지와 높이를 맞게하기 위해 높이 설정 */
+  height: 100px;
+  line-height: 100px;
+  /* fixed하면 width가 깨지기때문에 재설정 */
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+/* 반응형 웹을 사용하기 위해 inner-header 사용 */
+header .inner-header {
+  /* border: 3px solid red; */
+  width: 84%;
+  margin: 0 auto;
+}
+/* logo, gnb, tnb의 수평배치 + 부모 clear */
+/* 사진 액자 */
+header .inner-header .logo {
+  /* border: 3px solid violet; */
+  float: left;
+  /* 액자 크기 조절 */
+  width: 200px;
+}
+/* 이미지를 액자에 맞게 100% */
+header .inner-header .logo img {
+  width: 100%;
+}
+header .inner-header .gnb {
+  /* border: 3px solid red; */
+  float: left;
+  margin-left: 80px;
+}
+header .inner-header .gnb li {
+  /* border: 3px solid #000; */
+  float: left;
+  margin-right: 80px;
+}
+header .inner-header .gnb li a {
+  /* background: red; */
+  display: block;
+  color: #fff;
+  font-size: 16px;
+}
+header .inner-header .gnb li a:hover {
+  color: #ff8342;
+}
+header .inner-header .tnb {
+  /* border: 3px solid blue; */
+  float: right;
+  color: #fff;
+  font-size: 16px;
+}
+header .inner-header .tnb li {
+  float: left;
+  margin-right: 25px;
+}
+header .inner-header .tnb li:first-child i,
+header .inner-header .tnb li:nth-child(2) i {
+  margin-right: 8px;
+  /* icon size는 font-size로 */
+  font-size: 18px;
+}
+header .inner-header .tnb li:last-child a {
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 30px;
+}
+header .inner-header .tnb li:last-child a:hover {
+  background: #fff;
+  color: #ff8342;
+}
+header .inner-header .tnb li:last-child i {
+  margin-left: 5px;
+}
+header .inner-header .gnb-mobile {
+  display: none;
+}
