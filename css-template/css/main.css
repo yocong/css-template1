@@ -11,6 +11,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 9999;
 }
 /* 반응형 웹을 사용하기 위해 inner-header 사용 */
 header .inner-header {
@@ -79,4 +80,51 @@ header .inner-header .tnb li:last-child i {
 }
 header .inner-header .gnb-mobile {
   display: none;
+}
+
+/* section.main.style */
+section.main {
+  background: url("../img/vis_4.jpg") no-repeat center/cover fixed;
+  height: 100vh;
+  position: relative;
+}
+section.main .main-title {
+  /* background: red; */
+  color: #fff;
+  text-shadow: 2px 2px 10px #123;
+  text-align: center;
+}
+section.main .main-title h2 {
+  font-size: 55px;
+}
+section.main .main-title p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+section.main .main-title .view {
+  font-size: 15px;
+  letter-spacing: 2px;
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 5px 0;
+  position: relative;
+  /* 삐져나온 것 없애줌 */
+  overflow: hidden;
+}
+section.main .main-title .view::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  /* .view에 씌우기 위해 position */
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+}
+section.main .main-title .view:hover::after {
+  width: 100%;
 }
