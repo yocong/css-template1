@@ -128,3 +128,20 @@ section.main .main-title .view::after {
 section.main .main-title .view:hover::after {
   width: 100%;
 }
+/* section > div.title 공통 style */
+section .title {
+  text-align: center;
+}
+section .title h2 {
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+section .title p {
+  font-size: 18px;
+  color: #555;
+}
+section .sub-container {
+  width: 74%;
+  margin: 0 auto;
+}
+
