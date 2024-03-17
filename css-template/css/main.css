@@ -314,7 +314,7 @@ section.me ul.list ul.in li em {
   font-weight: 700;
 }
 section.me ul.list ul.in li p {
-  background: dodgerblue;
+  /* background: dodgerblue; */
   float: left;
   position: relative;
 }
@@ -341,4 +341,88 @@ section.me ul.list ul.in li p::before {
   /* button은 inline-block 이여서 margin이 안먹기 때문에 block으로 바꿔준다. */
   display: block;
   margin: 20px auto 0;
+}
+
+/* section.sns style */
+section.sns {
+  margin-bottom: 60px;
+}
+section.sns ul {
+  /* background: orange; */
+  margin-bottom: 50px auto;
+}
+section.sns ul li {
+  /* border: 3px solid #000; */
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+}
+/* 마지막은 margin 필요없으니 빼줌 */
+section.sns ul li:last-child {
+  margin-right: 0;
+}
+/* 사진 액자 */
+section.sns ul li .img-box {
+  /* border: 2px solid blue; */
+  height: 235px;
+  overflow: hidden;
+  position: relative;
+}
+/* 이미지 */
+section.sns ul li .img-box img {
+  width: 100%;
+}
+
+section.sns ul li .img-box::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  background: rgba(255, 131, 66, 0.75);
+  position: absolute;
+  z-index: 10;
+  transition: 0.5s;
+}
+section.sns ul li a:hover .img-box::before {
+  width: 100%;
+}
+
+section.sns ul li .img-box::after {
+  content: "BLOG";
+  font-size: 15px;
+  font-family: "Exo 2", sans-serif;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  color: #fff;
+  padding: 5px 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.7s;
+}
+section.sns ul li a:hover .img-box::after {
+  opacity: 1;
+}
+
+section.sns ul li .bottom {
+  padding: 20px 0 20px 30px;
+  box-sizing: border-box;
+}
+section.sns ul li .bottom p {
+  font-size: 18px;
+}
+section.sns ul li .bottom p.color {
+  color: #ff8342;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+section.sns ul li .bottom p.time {
+  color: #999;
+  font-size: 14px;
+  margin-top: 30px;
+}
+section.sns ul li .bottom p.time i {
+  margin-right: 5px;
+  font-size: 0.9em;
 }
