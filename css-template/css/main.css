@@ -215,7 +215,6 @@ section.innovation {
 }
 
 section.innovation .img-box {
-  background: orange;
   height: 540px;
   margin-top: 50px;
   background: url("../img/product_1.jpg") no-repeat center/cover;
