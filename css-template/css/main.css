@@ -329,3 +329,16 @@ section.me ul.list ul.in li p::before {
   left: -40px;
   top: 10px;
 }
+
+#incruit-btn {
+  width: 280px;
+  background: #ff8342;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  /* button은 inline-block 이여서 margin이 안먹기 때문에 block으로 바꿔준다. */
+  display: block;
+  margin: 20px auto 0;
+}
