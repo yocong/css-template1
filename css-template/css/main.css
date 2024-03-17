@@ -255,3 +255,77 @@ section.innovation .img-box .inner .bottom a {
 section.innovation .img-box .inner .bottom a:hover {
   background: #f86010;
 }
+
+/* section.me style */
+section.me {
+  background: url("../img/me.jpg") no-repeat center/cover;
+  padding: 80px 0;
+  margin-bottom: 150px;
+}
+section.me ul.list {
+  /* background: orange; */
+  margin-top: 50px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+/* section.me ul.list li -> 이렇게 쓰면 후손 포함 li */
+section.me ul.list > li {
+  /* border: 1px solid red; */
+  padding: 30px 60px;
+}
+section.me ul.list > li:first-child {
+  border-bottom: 1px solid #ddd;
+}
+section.me ul.list > li h3 {
+  /* background: skyblue; */
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* 아이콘을 왼쪽으로 보내기 위해 */
+section.me ul.list > li h3 span {
+  position: absolute;
+  left: -30px;
+  color: #ff8342;
+}
+section.me ul.list > li p {
+  /* background: red; */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+section.me ul.list > li .more {
+  font-size: 16px;
+  font-weight: 700;
+}
+section.me ul.list > li .more span {
+  color: #ff8342;
+  font-size: 14px;
+  margin-left: 3px;
+}
+section.me ul.list ul.in {
+  /* background: violet; */
+  margin-bottom: 30px;
+}
+section.me ul.list ul.in li em {
+  /* background: tomato; */
+  float: left;
+  width: 12%;
+  margin-top: 3px;
+  font-weight: 700;
+}
+section.me ul.list ul.in li p {
+  background: dodgerblue;
+  float: left;
+  position: relative;
+}
+section.me ul.list ul.in li p::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ff8342;
+  position: absolute;
+  left: -40px;
+  top: 10px;
+}
