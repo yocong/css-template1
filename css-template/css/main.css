@@ -128,3 +128,83 @@ section.main .main-title .view::after {
 section.main .main-title .view:hover::after {
   width: 100%;
 }
+/* section > div.title 공통 style */
+section .title {
+  text-align: center;
+}
+section .title h2 {
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+section .title p {
+  font-size: 18px;
+  color: #555;
+}
+section .sub-container {
+  width: 74%;
+  margin: 0 auto;
+}
+
+/* section.about style */
+section.about {
+  /* background: orange; */
+  margin: 80px 0;
+}
+section.about ul.sub-container {
+  /* background: orange; */
+  margin-top: 30px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 30px;
+}
+section.about ul.sub-container li {
+  /* border: 1px solid #000; */
+  float: left;
+  width: 33.333%;
+}
+/* a를 hover했을 때 어떤 것을 hover할지 정해야함 */
+section.about ul.sub-container li a:hover .img-box img {
+  transform: scale(1.2);
+}
+/* 사진 액자 */
+section.about ul.sub-container li .img-box {
+  /* border: 3px solid #000; */
+  overflow: hidden;
+}
+/* 이미지를 액자에 딱 맞게 */
+section.about ul.sub-container li .img-box img {
+  width: 100%;
+  transition: 0.6s;
+}
+section.about ul.sub-container li .text {
+  /* border: 3px solid blue; */
+  padding: 25px;
+}
+section.about ul.sub-container li .text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+section.about ul.sub-container li .text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+section.about ul.sub-container li .text .more {
+  /* border: 1px solid #000; */
+  /* lowercase : 일괄 소문자 변경 */
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-left: 40px;
+}
+section.about ul.sub-container li .text .more::before {
+  content: "→";
+  display: block;
+  width: 30px;
+  height: 30px;
+  /* y축 정렬 */
+  line-height: 30px;
+  background: #ff8342;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -7px;
+}
