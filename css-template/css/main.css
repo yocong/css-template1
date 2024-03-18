@@ -347,6 +347,9 @@ section.me ul.list ul.in li p::before {
 section.sns {
   margin-bottom: 60px;
 }
+section.sns .title {
+  margin-bottom: 60px;
+}
 section.sns ul {
   /* background: orange; */
   margin-bottom: 50px auto;
