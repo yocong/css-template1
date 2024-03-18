@@ -347,6 +347,9 @@ section.me ul.list ul.in li p::before {
 section.sns {
   margin-bottom: 60px;
 }
+section.sns .title {
+  margin-bottom: 60px;
+}
 section.sns ul {
   /* background: orange; */
   margin-bottom: 50px auto;
@@ -472,4 +475,272 @@ footer .inner .list li:last-child {
 footer .inner .list li a:hover {
   color: #ff8342;
   text-decoration: underline;
+}
+
+/* 반응형 웹 디자인 */
+/* 노트북 해상도 1600px 미만 */
+@media (max-width: 1600px) {
+  header .inner-header,
+  section .sub-container,
+  footer .inner {
+    width: 95%;
+  }
+  header .inner-header .gnb {
+    margin-left: 50px;
+  }
+  header .inner-header .gnb li {
+    margin-right: 40px;
+  }
+  section.main .main-title {
+    width: 60%;
+  }
+}
+
+/* 태블릿 L사이즈, 노트북 S사이즈 해상도 */
+@media (max-width: 1024px) {
+  header .inner-header nav {
+    display: none;
+  }
+
+  header .inner-header .gnb-mobile {
+    display: block;
+    font-size: 40px;
+    color: #fff;
+    float: right;
+  }
+  section.main .main-title {
+    width: 80%;
+  }
+  section.main .main-title h2 {
+    font-size: 40px;
+  }
+  section.innovation .img-box {
+    height: 400px;
+  }
+  section.innovation .img-box .inner .bottom {
+    padding: 25px 55px;
+  }
+  section.me ul.list ul.in li p::before {
+    left: -20px;
+  }
+  section.sns ul li .img-box {
+    height: 175px;
+  }
+  section.sns ul li .bottom {
+    padding-left: 5px;
+  }
+
+  footer .inner .list {
+    display: none;
+  }
+  footer .inner .ft-logo {
+    margin-top: 15px;
+  }
+}
+
+/* 태블릿 768px 해상도 (아이패드 미니) */
+@media screen and (max-width: 768px) {
+  section.main .main-title h2 {
+    font-size: 40px;
+  }
+  section.main .main-title p {
+    font-size: 20px;
+  }
+
+  section.about ul.sub-container li {
+    float: none;
+    width: 100%;
+    margin-bottom: 150px;
+  }
+
+  section.about ul.sub-container li .img-box {
+    height: 500px;
+  }
+
+  section.innovation .img-box .inner .bottom {
+    padding: 30px;
+  }
+
+  section.innovation .img-box .inner .bottom p {
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  section.innovation .img-box .inner .bottom a {
+    float: none;
+    display: block;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  section.me {
+    padding: 50px 0;
+  }
+
+  section.me ul.list ul.in li em {
+    float: none;
+    /* float: none하면 em이 inline으로 바뀌기 때문에 width 적용 X, display: block;  */
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  section.sns ul li {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.sns ul li a .img-box {
+    height: 380px;
+  }
+
+  section.sns ul li a .bottom p.time {
+    margin-top: 10px;
+  }
+
+  footer .inner .ft-logo {
+    float: none;
+    width: 30%;
+    margin: 0 auto;
+  }
+  footer .inner .address {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/* 모바일 414px 해상도 (아이폰 678 plus) */
+@media screen and (max-width: 414px) {
+  header {
+    height: 60px;
+    line-height: 60px;
+  }
+  header .inner-header .logo {
+    width: 130px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+  }
+
+  section.main .main-title h2 {
+    font-size: 30px;
+  }
+  section.main .main-title p {
+    font-size: 16px;
+  }
+
+  section.main .main-title .view {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  section .title h2 {
+    font-size: 25px;
+  }
+  section .title p {
+    font-size: 14px;
+  }
+
+  section.about {
+    padding: 30px 0;
+  }
+
+  section.about ul li {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background: #fafafa;
+    margin-bottom: 10px;
+  }
+
+  section.about ul li a .img-box {
+    height: 300px;
+  }
+
+  section.innovation .img-box {
+    height: 400px;
+  }
+
+  section.me ul.list > li {
+    padding: 20px 20px 20px 45px;
+  }
+  section.me ul.list > li p {
+    text-align: justify;
+  }
+
+  section.sns ul li a .img-box {
+    height: 200px;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+}
+
+/* 모바일 320px 해상도 (아이폰5 / SE) */
+@media screen and (max-width: 320px) {
+  br.mo {
+    display: block;
+  }
+
+  .wrap {
+    min-width: 320px;
+  }
+
+  header .inner-header .logo {
+    width: 140px;
+    height: auto;
+  }
+
+  header .inner-header .gnb-mobile {
+    font-size: 32px;
+    margin-right: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+  }
+
+  section.main .main-title h2 {
+    font-size: 22px;
+  }
+
+  section.main .main-title p {
+    font-size: 14px;
+  }
+
+  section.about ul li a .img-box {
+    height: 200px;
+  }
+
+  section.about ul li a .text {
+    padding: 15px;
+  }
+
+  section.about ul li a .text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  section.about ul li a .text p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  section.innovation .img-box {
+    height: 300px;
+  }
+
+  section.me {
+    margin-bottom: 40px;
+  }
+
+  section.sns ul li a .img-box {
+    height: 170px;
+  }
+
+  section.sns ul li a .bottom {
+    padding: 20px 10px;
+  }
 }
